@@ -8,8 +8,10 @@ RUN npm install
 
 COPY . .
 
-ENV PORT 4200
+ENV PORT 3000
 
 EXPOSE $PORT
+
+VOLUME [ "/app/data" ]
 
 CMD [ "node", "app.js" ]
